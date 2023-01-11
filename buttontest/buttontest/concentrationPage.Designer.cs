@@ -56,6 +56,7 @@
             this.btnConcentrationPageStart.TabIndex = 2;
             this.btnConcentrationPageStart.Text = "시작";
             this.btnConcentrationPageStart.UseVisualStyleBackColor = true;
+            this.btnConcentrationPageStart.Click += new System.EventHandler(this.btnConcentrationPageStart_Click);
             // 
             // btnConcentrationPageStop
             // 

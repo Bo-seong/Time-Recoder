@@ -29,13 +29,18 @@ namespace buttontest
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginPage newform3 = new loginPage();
+            SignUpPage newform3 = new SignUpPage();
             newform3.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void lbl_input_ID_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

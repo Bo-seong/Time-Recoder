@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace buttontest
 {
-    public partial class loginPage : Form
+    public partial class concentrationPage : Form
     {
-        public loginPage()
+        public concentrationPage()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            startPage newform1 = new startPage();
-            newform1.Show();
+            
+        }
+
+        private void btnConcentrationPageStart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
