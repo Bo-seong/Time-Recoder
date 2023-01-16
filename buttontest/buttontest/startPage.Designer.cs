@@ -34,11 +34,14 @@
             this.titelLabel = new System.Windows.Forms.Label();
             this.btnSignup = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lbl_input_ID = new System.Windows.Forms.Label();
+            this.lbl_input_PW = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(147, 433);
+            this.btnLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(184, 306);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(137, 53);
             this.btnLogin.TabIndex = 0;
@@ -48,14 +51,16 @@
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(228, 244);
+            this.textBoxId.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxId.Location = new System.Drawing.Point(325, 172);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(181, 21);
             this.textBoxId.TabIndex = 1;
             // 
             // textboxPw
             // 
-            this.textboxPw.Location = new System.Drawing.Point(228, 309);
+            this.textboxPw.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxPw.Location = new System.Drawing.Point(325, 226);
             this.textboxPw.Name = "textboxPw";
             this.textboxPw.Size = new System.Drawing.Size(181, 21);
             this.textboxPw.TabIndex = 3;
@@ -63,16 +68,17 @@
             // titelLabel
             // 
             this.titelLabel.AutoSize = true;
-            this.titelLabel.Font = new System.Drawing.Font("굴림", 50F);
-            this.titelLabel.Location = new System.Drawing.Point(144, 64);
+            this.titelLabel.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titelLabel.Location = new System.Drawing.Point(227, 52);
             this.titelLabel.Name = "titelLabel";
-            this.titelLabel.Size = new System.Drawing.Size(386, 67);
+            this.titelLabel.Size = new System.Drawing.Size(237, 56);
             this.titelLabel.TabIndex = 4;
             this.titelLabel.Text = "집중 타이머";
             // 
             // btnSignup
             // 
-            this.btnSignup.Location = new System.Drawing.Point(363, 433);
+            this.btnSignup.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup.Location = new System.Drawing.Point(369, 306);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(137, 53);
             this.btnSignup.TabIndex = 5;
@@ -82,6 +88,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(589, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(97, 36);
@@ -90,11 +97,34 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button3_Click);
             // 
+            // lbl_input_ID
+            // 
+            this.lbl_input_ID.AutoSize = true;
+            this.lbl_input_ID.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_input_ID.Location = new System.Drawing.Point(179, 167);
+            this.lbl_input_ID.Name = "lbl_input_ID";
+            this.lbl_input_ID.Size = new System.Drawing.Size(84, 29);
+            this.lbl_input_ID.TabIndex = 7;
+            this.lbl_input_ID.Text = "아이디 :";
+            this.lbl_input_ID.Click += new System.EventHandler(this.lbl_input_ID_Click);
+            // 
+            // lbl_input_PW
+            // 
+            this.lbl_input_PW.AutoSize = true;
+            this.lbl_input_PW.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_input_PW.Location = new System.Drawing.Point(179, 221);
+            this.lbl_input_PW.Name = "lbl_input_PW";
+            this.lbl_input_PW.Size = new System.Drawing.Size(103, 29);
+            this.lbl_input_PW.TabIndex = 8;
+            this.lbl_input_PW.Text = "비밀번호 :";
+            // 
             // startPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 654);
+            this.ClientSize = new System.Drawing.Size(698, 439);
+            this.Controls.Add(this.lbl_input_PW);
+            this.Controls.Add(this.lbl_input_ID);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.titelLabel);
@@ -102,7 +132,7 @@
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.btnLogin);
             this.Name = "startPage";
-            this.Text = "Form1";
+            this.Text = "집중 타이머";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,6 +146,8 @@
         private System.Windows.Forms.Label titelLabel;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lbl_input_ID;
+        private System.Windows.Forms.Label lbl_input_PW;
     }
 }
 
