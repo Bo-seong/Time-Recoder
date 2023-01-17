@@ -30,11 +30,11 @@
         {
             this.btnConcentrationPageExit = new System.Windows.Forms.Button();
             this.btnConcentrationPageStart = new System.Windows.Forms.Button();
-            this.btnConcentrationPageStop = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCamStop = new System.Windows.Forms.Button();
+            this.picCam = new System.Windows.Forms.PictureBox();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCam)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConcentrationPageExit
@@ -58,23 +58,24 @@
             this.btnConcentrationPageStart.UseVisualStyleBackColor = true;
             this.btnConcentrationPageStart.Click += new System.EventHandler(this.btnConcentrationPageStart_Click);
             // 
-            // btnConcentrationPageStop
+            // btnCamStop
             // 
-            this.btnConcentrationPageStop.Font = new System.Drawing.Font("굴림", 30F);
-            this.btnConcentrationPageStop.Location = new System.Drawing.Point(496, 505);
-            this.btnConcentrationPageStop.Name = "btnConcentrationPageStop";
-            this.btnConcentrationPageStop.Size = new System.Drawing.Size(168, 85);
-            this.btnConcentrationPageStop.TabIndex = 4;
-            this.btnConcentrationPageStop.Text = "정지";
-            this.btnConcentrationPageStop.UseVisualStyleBackColor = true;
+            this.btnCamStop.Font = new System.Drawing.Font("굴림", 30F);
+            this.btnCamStop.Location = new System.Drawing.Point(496, 505);
+            this.btnCamStop.Name = "btnCamStop";
+            this.btnCamStop.Size = new System.Drawing.Size(168, 85);
+            this.btnCamStop.TabIndex = 4;
+            this.btnCamStop.Text = "정지";
+            this.btnCamStop.UseVisualStyleBackColor = true;
+            this.btnCamStop.Click += new System.EventHandler(this.btnCamStop_Click);
             // 
-            // pictureBox1
+            // picCam
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(656, 368);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.picCam.Location = new System.Drawing.Point(33, 12);
+            this.picCam.Name = "picCam";
+            this.picCam.Size = new System.Drawing.Size(656, 368);
+            this.picCam.TabIndex = 5;
+            this.picCam.TabStop = false;
             // 
             // domainUpDown1
             // 
@@ -102,13 +103,14 @@
             this.ClientSize = new System.Drawing.Size(800, 644);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.domainUpDown1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnConcentrationPageStop);
+            this.Controls.Add(this.picCam);
+            this.Controls.Add(this.btnCamStop);
             this.Controls.Add(this.btnConcentrationPageStart);
             this.Controls.Add(this.btnConcentrationPageExit);
             this.Name = "concentrationPage";
             this.Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.concentrationPage_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.picCam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,8 +120,8 @@
 
         private System.Windows.Forms.Button btnConcentrationPageExit;
         private System.Windows.Forms.Button btnConcentrationPageStart;
-        private System.Windows.Forms.Button btnConcentrationPageStop;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCamStop;
+        private System.Windows.Forms.PictureBox picCam;
         private System.Windows.Forms.DomainUpDown domainUpDown1;
         private System.Windows.Forms.Label label1;
     }

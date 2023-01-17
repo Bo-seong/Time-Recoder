@@ -17,7 +17,7 @@ namespace MainClientUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
             startPage newform1 = new startPage();
@@ -43,6 +43,11 @@ namespace MainClientUI
             this.Hide();
             Form6 newform6 = new Form6();
             newform6.Show();
+        }
+
+        private void mainPage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

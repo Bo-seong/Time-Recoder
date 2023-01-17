@@ -17,8 +17,11 @@ namespace MainClientUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            MessageBox.Show((String) "로그인 되었습니다.", (String)"로그인",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning);
 
             this.Hide();
             mainPage newform2 = new mainPage();
