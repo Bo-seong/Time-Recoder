@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnLogin = new System.Windows.Forms.Button();
-            this.textBoxId = new System.Windows.Forms.TextBox();
-            this.textboxPw = new System.Windows.Forms.TextBox();
+            this.txtLoginID = new System.Windows.Forms.TextBox();
+            this.txtLoginPW = new System.Windows.Forms.TextBox();
             this.titelLabel = new System.Windows.Forms.Label();
             this.btnSignup = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -47,23 +47,23 @@
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // textBoxId
+            // txtLoginID
             // 
-            this.textBoxId.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxId.Location = new System.Drawing.Point(325, 172);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(181, 21);
-            this.textBoxId.TabIndex = 1;
+            this.txtLoginID.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoginID.Location = new System.Drawing.Point(325, 172);
+            this.txtLoginID.Name = "txtLoginID";
+            this.txtLoginID.Size = new System.Drawing.Size(181, 21);
+            this.txtLoginID.TabIndex = 1;
             // 
-            // textboxPw
+            // txtLoginPW
             // 
-            this.textboxPw.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxPw.Location = new System.Drawing.Point(325, 226);
-            this.textboxPw.Name = "textboxPw";
-            this.textboxPw.Size = new System.Drawing.Size(181, 21);
-            this.textboxPw.TabIndex = 3;
+            this.txtLoginPW.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoginPW.Location = new System.Drawing.Point(325, 226);
+            this.txtLoginPW.Name = "txtLoginPW";
+            this.txtLoginPW.Size = new System.Drawing.Size(181, 21);
+            this.txtLoginPW.TabIndex = 3;
             // 
             // titelLabel
             // 
@@ -128,8 +128,8 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.titelLabel);
-            this.Controls.Add(this.textboxPw);
-            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.txtLoginPW);
+            this.Controls.Add(this.txtLoginID);
             this.Controls.Add(this.btnLogin);
             this.Name = "startPage";
             this.Text = "집중 타이머";
@@ -141,8 +141,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBoxId;
-        private System.Windows.Forms.TextBox textboxPw;
+        private System.Windows.Forms.TextBox txtLoginID;
+        private System.Windows.Forms.TextBox txtLoginPW;
         private System.Windows.Forms.Label titelLabel;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Button btnExit;

@@ -9,27 +9,31 @@ namespace MainClientUI
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
             startPage newform1 = new startPage();
             newform1.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btn_register_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lbl_userName_Click(object sender, EventArgs e)
+        private void SignUpPage_Load(object sender, EventArgs e)
         {
-
+            chkAgree.Checked = false;
+            btnRegister.Enabled = false;
+            chkAgree.CheckStateChanged += chkAgree_CheckedChanged;
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void chkAgree_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (chkAgree.Checked) 
+                btnRegister.Enabled = true;
+            else
+                btnRegister.Enabled = false;
         }
     }
 }
