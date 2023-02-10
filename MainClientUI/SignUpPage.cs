@@ -12,7 +12,7 @@ namespace MainClientUI
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
-            startPage newform1 = new startPage();
+            startForm newform1 = new startForm();
             newform1.Show();
         }
 

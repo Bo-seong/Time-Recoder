@@ -16,7 +16,7 @@ namespace MainClientUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startPage());
+            Application.Run(new startForm());
         }
     }
 }
